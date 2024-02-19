@@ -1,6 +1,6 @@
 {
   "name": "ytnotify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
@@ -30,6 +30,6 @@
     "xml2js": "^0.6.2"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
