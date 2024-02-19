@@ -1,6 +1,6 @@
 {
   "name": "@razorrsd/ytnotify",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
@@ -8,7 +8,7 @@
     "watch": "tsc --watch",
     "clean": "rimraf dist",
     "test": "jest --config jestconfig.json",
-    "release": "standard-version && git push --follow-tags && npm build && npm publish"
+    "release": "standard-version && git push --follow-tags && npm run build && npm publish"
   },
   "repository": {
     "type": "git",
