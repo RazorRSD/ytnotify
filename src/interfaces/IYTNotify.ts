@@ -19,6 +19,7 @@ interface INotifyData {
 interface IUpdateSubscription {
   type: "subscribe" | "unsubscribe";
   channel: string | string[];
+  expirationTime?: string;
 }
 
 interface IIsSubscribed {

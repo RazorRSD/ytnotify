@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Request, Response } from "express";
-import { IIsSubscribed } from "../interfaces/IYTNotify";
+import { IIsSubscribed, IUpdateSubscription } from "../interfaces/IYTNotify";
 import xmlbodyparser from "../xmlParser";
 import YTNotify from "./YTNotify";
 import { createHmac, Hmac } from "crypto";
@@ -140,10 +140,12 @@ class Support {
     const hubChallenge = query["hub.challenge"];
     const hubMode = query["hub.mode"];
     const hubTopic = query["hub.topic"] as string;
+    const hubLease = query["hub.lease_seconds"];
     const channelId = hubTopic.replace(this.originHubUrl, "");
-    const data = {
-      hubMode,
-      channelId,
+    const data: IUpdateSubscription = {
+      type: hubMode as any,
+      channel: channelId,
+      expirationTime: hubLease as string,
     };
     if (hubMode === "subscribe") {
       YTNotify.emit("subscribe", data);
