@@ -1,6 +1,6 @@
 {
   "name": "@razor_rsd/ytnotify",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A lightweight Node.js package for receiving real-time YouTube video upload notifications using PubSubHubbub/WebSub protocol. Features TypeScript support, Express middleware integration, secure webhooks, and easy-to-use event-based notifications. Perfect for creating Discord bots, notification systems, or any application requiring YouTube upload alerts.",
   "main": "build/src/index.js",
   "scripts": {

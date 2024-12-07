@@ -2,7 +2,7 @@
 
 A lightweight Node.js package for receiving real-time YouTube video upload notifications using PubSubHubbub/WebSub protocol.
 
-[![npm version](https://img.shields.io/npm/v/ytnotify.svg)](https://www.npmjs.com/package/ytnotify)
+[![npm version](https://img.shields.io/npm/v/@razor_rsd/ytnotify.svg)](https://www.npmjs.com/package/@razor_rsd/ytnotify)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -17,14 +17,14 @@ A lightweight Node.js package for receiving real-time YouTube video upload notif
 ## Installation
 
 ```bash
-npm install ytnotify
+npm install @razor_rsd/ytnotify
 ```
 
 ## Usage
 
 ```typescript
 import express from 'express';
-import { YTNotify } from 'ytnotify';
+import { YTNotify } from '@razor_rsd/ytnotify';
 
 const app = express();
 
@@ -131,4 +131,4 @@ MIT
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/ytnotify/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/RazorRSD/ytnotify/issues).
