@@ -1,6 +1,5 @@
 import axios from "axios";
 import { Request, Response } from "express";
-import { IIsSubscribed, IUpdateSubscription } from "../interfaces/IYTNotify";
 import xmlbodyparser from "../xmlParser";
 import YTNotify from "./YTNotify";
 import { createHmac, Hmac } from "crypto";

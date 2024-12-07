@@ -1,11 +1,5 @@
 import EventEmitter from "events";
 import { Request, Response } from "express";
-import {
-  IIsSubscribed,
-  IModuleOptions,
-  INotifyData,
-  IUpdateSubscription,
-} from "../interfaces/IYTNotify";
 import Support from "./Support";
 
 const originHubUrl = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=";

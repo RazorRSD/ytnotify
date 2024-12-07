@@ -1,12 +1,12 @@
-interface IModuleOptions {
+declare type IModuleOptions = {
   hubCallback: string;
   secret: string;
   middleware?: boolean;
   path?: string;
   hubUrl?: string;
-}
+};
 
-interface INotifyData {
+declare type INotifyData = {
   id: string;
   channelId: string;
   title: string;
@@ -14,15 +14,15 @@ interface INotifyData {
   author: string;
   published: string;
   updated: string;
-}
+};
 
-interface IUpdateSubscription {
+declare type IUpdateSubscription = {
   type: "subscribe" | "unsubscribe";
   channel: string | string[];
   expirationTime?: string;
-}
+};
 
-interface IIsSubscribed {
+declare type IIsSubscribed = {
   callBackURL: string;
   state: string;
   lastSuccessfullVerification: string;
@@ -31,6 +31,4 @@ interface IIsSubscribed {
   lastUnsubscribeRequest: string;
   contentReceived: string;
   contentDelivered: string;
-}
-
-export { IModuleOptions, INotifyData, IUpdateSubscription, IIsSubscribed };
+};
