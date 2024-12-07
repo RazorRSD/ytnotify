@@ -1,5 +1,5 @@
 {
-  "name": "@razorrsd/ytnotify",
+  "name": "@razor_rsd/ytnotify",
   "version": "1.0.12",
   "description": "A lightweight Node.js package for receiving real-time YouTube video upload notifications using PubSubHubbub/WebSub protocol. Features TypeScript support, Express middleware integration, secure webhooks, and easy-to-use event-based notifications. Perfect for creating Discord bots, notification systems, or any application requiring YouTube upload alerts.",
   "main": "build/src/index.js",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RazorRSD/ytnotify.git"
+    "url": "git+https://github.com/RazorRSD/ytnotify.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "nodemon": "^3.0.3",
     "rimraf": "6.0.1",
@@ -29,5 +29,9 @@
     "axios": "^1.6.7",
     "express": "5.0.1",
     "xml2js": "^0.6.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/RazorRSD/ytnotify/issues"
+  },
+  "homepage": "https://github.com/RazorRSD/ytnotify#readme"
 }
