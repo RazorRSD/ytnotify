@@ -8,7 +8,7 @@ A lightweight Node.js package for receiving real-time YouTube video upload notif
 ## Features
 
 - Real-time notifications for new YouTube video uploads
-- Support for multiple channel subscriptions
+- Support for multiple channel subscriptions 
 - Event-based notification system
 - Express middleware support
 - TypeScript support
